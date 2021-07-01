@@ -1,0 +1,186 @@
+.how_works{
+    overflow: hidden;
+    padding: 0 5rem 7rem 5rem;
+    position: relative;
+    &--bg-gray{
+        background-color: $gray-800;
+    }
+    
+    &--card{
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 2rem;
+        min-height: 400px;
+        border-radius: 15px;
+        position: relative;
+        z-index: 99;
+       
+        &__icon{
+            margin-bottom: 2rem;
+            display: inline-block;
+            img{
+                width: 100px;
+                display: block;
+            }
+        }
+        &__desc{
+            p{
+                font-size: 1.2rem;
+                line-height: 1.5;
+                color: $black;
+            }
+        }
+        &:hover{
+            @include bg-grad-blue;
+           
+            p{
+                color: $white;
+            }
+        }
+    }
+    
+    .shape-1{
+        position: absolute;
+        left: 0;
+        top: 20%;
+        img{
+            width: 100%;
+        }
+    }
+    .shape-2{
+        position: absolute;
+        right: 0;
+        top: -10%;
+        width: 55%;
+        z-index: 9;
+        img{
+            width: 100%;
+        }
+    }
+    .shape-big{
+        position: absolute;
+        left: 0;
+        top: 8%;
+        width: 100%;
+        opacity: 0.5;
+        z-index: 9;
+        img{
+            width: 100%;
+        }
+    }
+    &--padding{
+        padding: 4rem 3rem;
+        overflow: visible;
+        .how_works--card{
+            padding:4.5rem 2rem;
+            
+        }
+        .shape-1{
+            top: 5%;
+            
+        }
+    }
+    &--sm_text{
+        p{
+            font-size: 1rem;
+            line-height: 1.5;
+            font-family: "Segoe UI";
+            max-width: 60%;
+            margin: auto;
+        }
+    }
+}
+@media (max-width:1440px){
+    .how_works{
+        
+        
+        &--card{
+            padding: 2rem;
+            min-height: 320px;
+            &__icon{
+                
+                img{
+                    width: 80px;
+                    display: block;
+                }
+            }
+            &__desc{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+      
+    }
+}
+@media (max-width:991px){
+    .how_works{
+        overflow: hidden;
+        padding: 0 0 7rem 0;
+        position: relative;
+        &--bg-gray{
+            background-color: $gray-800;
+
+            .col{
+                flex-basis: 100%;
+            }
+        }
+        .search-box{
+            margin:50px 20px;
+           .btn{
+            span{
+                display: inline-block;
+            }
+           }
+        }
+        &--card{
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 1rem;
+            min-height: auto;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            &__icon{
+                margin-bottom: 1rem;
+                img{
+                    width: 50px;
+                }
+            }
+    
+            
+        }
+        &--padding{
+            padding: 4rem 0;
+            overflow: visible;
+            .how_works--card{
+                padding:2rem 2rem;
+                
+            }
+            .shape-1{
+                top: 5%;
+                
+            }
+        }
+        .shape-1{
+            position: absolute;
+            left: 0;
+            top: 7%;
+            img{
+                width: 100%;
+            }
+        }
+        .shape-big{
+            display: none;
+        }
+        &--sm_text{
+            p{
+                font-size: 1rem;
+                line-height: 1.5;
+                font-family: "Segoe UI";
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+

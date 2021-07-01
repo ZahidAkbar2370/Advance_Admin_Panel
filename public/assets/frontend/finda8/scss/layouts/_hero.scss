@@ -1,0 +1,620 @@
+.hero{
+    margin-top: 105px;
+    min-height: 800px;
+    background-size: cover;
+    color: $white;
+    overflow: hidden;
+
+    &--home{
+        background-image: url('../images/home-bg.png');
+        padding-top: 15rem;
+        h2{
+            font-size: 70px;
+            font-weight: bold;
+            
+        }
+        p{
+            font-size: 1.8rem;
+            line-height: 1.2;
+            font-weight: 400;
+            max-width: 70%;
+        }
+    }
+    &--student{
+        background-image: url('../images/student-bg.png');
+        padding-top: 15rem;
+        padding-right: 2rem;
+        h3{
+            font-size: 42px;
+            font-weight: bold;
+        }
+        h4{
+            font-size: 28px;
+            margin: 1rem 0;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        .btn{
+            float: right;
+            &.btn-green{
+                background: $green;
+                border-radius: 50px;
+                height: 60px;
+                width: 180px;
+                font-size: 1.2rem;
+                color: $white;
+                font-weight: bold;
+                font-family: $font-family;
+                &:hover{
+                    background: darken($green, 5%);
+                }
+                
+            }
+        }
+    }
+    &--tutor{
+        background-image: url('../images/tutor-bg.jpg');
+        padding-top: 15rem;
+        padding-right: 4rem;
+        text-align: right;
+        .hero--inner{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        h2{
+            font-size: 60px;
+            font-weight: bold;
+            max-width: 74%;
+            margin-bottom: 3rem;
+        }
+        
+        .btn{
+            float: right;
+            &.btn-green{
+                background: $green;
+                border-radius: 50px;
+                height: 60px;
+                width: 180px;
+                font-size: 1.2rem;
+                color: $white;
+                font-weight: bold;
+                font-family: $font-family;
+                border: 1px solid $black;
+                &:hover{
+                    background: darken($green, 5%);
+                }
+            }
+        }
+    }
+    &--institution{
+        background-image: url('../images/institution-bg.jpg');
+        padding-top: 20rem;
+       
+        h3{
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.5;
+            max-width: 90%;
+            font-weight: $font-300;
+            margin-bottom: 1.5rem;
+        }
+        .btn{
+            &.btn-green{
+                background: $green;
+                border-radius: 50px;
+                height: 60px;
+                width: 220px;
+                font-size: 1.2rem;
+                color: $white;
+                font-weight: bold;
+                font-family: $font-family;
+                border: 1px solid $black;
+                &:hover{
+                    background: darken($green, 5%);
+                }
+            }
+        }
+    }
+    &--buy_book{
+        background-image: url('../images/buy-book.png');
+        padding-top: 20rem;
+        text-align: center;
+       
+        h2{
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 1.8;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+       
+    }
+    
+    &--sell_book{
+        background-image: url('../images/sell-bg.png');
+        padding-top: 20rem;
+       
+        h3{
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        p{
+            font-size: 1.3rem;
+            line-height: 1.5;
+            max-width: 90%;
+            font-weight: $font-300;
+            margin-bottom: 1.5rem;
+        }
+        .btn{
+            &.btn-green{
+                background: $green;
+                border-radius: 50px;
+                height: 60px;
+                width: 220px;
+                font-size: 1.2rem;
+                color: $white;
+                font-weight: bold;
+                font-family: $font-family;
+                border: 1px solid $black;
+                &:hover{
+                    background: darken($green, 5%);
+                }
+            }
+        }
+    }
+
+    
+}
+
+.search-box{
+    max-width: 80%;
+    margin: 100px auto;
+    background-color: $white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 30px;
+    height: 70px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.16);
+    input{
+        flex-basis: 31%;
+        border: none;
+        background: transparent;
+        font-family: $font-family;
+        font-weight: $font-300;
+        font-size: 16px;
+        line-height: 1.1;
+        padding: 0 10px;
+        &:nth-child(2){
+            border-left: 1px solid $gray-500;
+            border-right: 1px solid $gray-500;
+        }
+        outline: none;
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        img{
+            width: 32px;
+        }
+        span{
+            display: none;
+        }
+    }
+}
+
+.search-box-sm{
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6px 10px 6px 30px;
+    height: 60px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.16); 
+    input{
+        flex-basis: 90%;
+        border: none;
+        background: transparent;
+        font-family: $font-family;
+        font-weight: $font-300;
+        font-size: 16px;
+        line-height: 1.1;
+        padding: 0 10px;
+        &:nth-child(2){
+            border-left: 1px solid $gray-500;
+            border-right: 1px solid $gray-500;
+        }
+        outline: none;
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        img{
+            width: 32px;
+        }
+    }      
+}
+
+@media (max-width:991px){
+
+    .search-box{
+        max-width: 100%;
+        margin: 50px 10px;
+        padding: 10px;
+        height: auto;
+        border-radius: 15px;
+        position: relative;
+        input{
+            padding: 10px;
+            background-color: #f1f1f1;
+            flex-basis: 100%;
+            border:none;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            &:nth-child(2){
+                flex-basis: 100%;
+                border:none;
+            }
+           
+        }
+        .btn{
+            padding: 10px;
+            height: 40px;
+            border-radius: 5px;
+            width: 100%;
+            background-color: $yellow;
+            color: $black;
+            font-weight: bold;
+           span{
+               display: inline-block;
+           }
+           img{
+               width: 24px;
+           }
+        }
+        
+    }
+}
+@media (max-width:1440px){
+    .search-box{
+        margin: 50px auto;
+    }
+    .hero{
+        min-height: 600px;
+        
+        &--student{
+            padding-top: 10rem;
+            
+            h3{
+                font-size: 32px;
+            }
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+            
+        }
+
+        &--tutor{
+            padding-top: 10rem;
+            h2{
+                font-size: 48px;
+                max-width: 80%;
+            }
+            
+            
+        }
+        &--institution{
+            padding-top: 15rem;
+           
+            h3{
+                font-size: 48px;
+            }
+            
+        }
+        &--buy_book{
+            padding-top: 15rem;
+           
+            h2{
+                font-size: 48px;
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 1.8;
+                font-weight: 400;
+                font-family: "Segoe UI";
+                margin-bottom: 1.5rem;
+            }
+           
+        }
+        
+        &--sell_book{
+            padding-top: 10rem;
+           
+            h3{
+                font-size: 48px;
+            }
+            p{
+                font-size: 1.1rem;
+               
+            }
+           
+        }
+    
+        
+    }
+    
+    
+}
+@media (max-width:991px){
+    .hero{
+        min-height: auto;
+        padding-bottom: 4rem;
+        margin-top: 90px;
+    
+        &--home{
+            padding-top: 8rem;
+            background-image: url('../images/home-bg-sm.png');
+            background-position: 100% 100%;
+            .hero--inner{
+                display: flex;
+                flex-direction: column;
+                .search-box{
+                    margin-top: 250px;
+                }
+            }
+            h2{
+                font-size: 32px;
+                font-weight: bold;
+                
+            }
+            p{
+                font-size: 1rem;
+                max-width: 90%;
+            }
+        }
+        &--student{
+            padding-top: 4rem;
+            padding-right: 0;
+            background-image: url('../images/student-bg-sm.png');
+            background-position: center;
+            .hero--inner{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                min-height: 500px;
+            }
+            h3{
+                font-size: 32px;
+                font-weight: bold;
+                
+            }
+            h4{
+                
+                display: none;
+            }
+            p{
+               
+                display: none;
+            }
+            
+        }
+        &--tutor{
+            padding-top: 4rem;
+            padding-right: 0;
+            text-align: left;
+            background-position: 20% 100%;
+            .hero--inner{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                min-height: 500px;
+            }
+            h2{
+                font-size: 36px;
+                max-width: 100%;
+            }
+            
+            
+        }
+        &--institution{
+            padding-top: 4rem;
+            background-position: 50% 100%;
+
+            .hero--inner{
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+           
+            h3{
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+           
+        }
+        &--buy_book{
+            padding-top: 4rem;
+            text-align: left;
+            background-position: 20% 100%;
+            .hero--inner{
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+                .search-box-sm {
+                    max-width:100%;
+                    margin: 0;
+                    height: 55px;
+                    flex-wrap: nowrap;
+                    .btn{
+                        margin-left: -20px;
+                    }
+                }
+
+            }
+           
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 0;
+                margin-top: auto;
+            }
+            p{
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+           
+        }
+        
+        &--sell_book{
+            background-image: url('../images/sell-book-sm.png');
+            padding-top: 4rem;
+            .hero--inner{
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+            }
+           
+            h3{
+                font-size: 20px;
+                margin-top: 50px;
+            }
+            p{
+                font-size: 1rem;
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+            .btn.btn-green {
+                height: 50px;
+                width: 150px;
+                font-size: 1rem;
+            }
+        }
+    
+        
+    }
+    
+}
+
+@media (min-width:2000px){
+    .hero{
+        min-height:1200px;
+        &--student{
+            background-image: url('../images/student-bg.png');
+            padding-top: 25rem;
+            padding-right: 5rem;
+           
+            h3{
+                font-size: 62px;
+                
+            }
+            h4{
+                font-size: 36px;
+                ;line-height: 1.5;
+                margin: 1.5rem 0;
+            }
+            p{
+                font-size: 1.8rem;
+                line-height: 1.5;
+            }
+            .btn{
+                &.btn-green{
+                    height: 80px;
+                    width: 250px;
+                    font-size: 1.5rem;
+                   
+                }
+            }
+        }
+        &--tutor{
+            
+            padding-top: 25rem;
+            padding-right: 4rem;
+            .hero--inner{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            h2{
+                font-size: 65px;
+                max-width: 90%;
+            }
+            
+            .btn{
+                float: right;
+                &.btn-green{
+                    height: 80px;
+                    width: 220px;
+                    font-size: 1.8rem;
+                    
+                }
+            }
+        }
+        &--institution{
+            padding-top:40rem;
+           
+            h3{
+                font-size: 60px;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 1.5rem;
+                max-width: 90%;
+            }
+            .btn{
+                &.btn-green{
+                    height: 80px;
+                    width: 250px;
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+        
+        
+        &--sell_book{
+            padding-top: 18rem;
+            .btn{
+                &.btn-green{
+                    height: 80px;
+                    width: 220px;
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
+    
+        
+    }
+    
+   
+}

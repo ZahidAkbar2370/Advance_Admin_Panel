@@ -1,0 +1,69 @@
+.motivation{
+    padding: 5rem 2rem;
+    &--card{
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 10px 10px 0 0;
+        position: relative;
+        min-height: 450px;
+        &__cover{
+            height: 100%;
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__desc{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 1rem 2rem;
+            width: 100%;
+            background-color: $yellow;
+            P{
+                color: $black;
+                font-size: 1.3rem;
+                line-height: 1.5;
+                margin: 0;
+
+            }
+        }
+    }
+}
+@media (max-width:1440px){
+    .motivation{
+       
+        &--card{
+            
+            min-height: 350px;
+            
+            &__desc{
+                
+                P{
+                    color: $black;
+                    font-size: 1rem;
+    
+                }
+            }
+        }
+    }
+}
+@media (max-width:991px){
+    .motivation{
+        padding: 3rem 0;
+        &--card{
+            min-height: 250px;
+            margin-bottom: 2rem;
+            &__desc{
+                P{
+                    color: $black;
+                    font-size: 0.8rem;
+                    line-height: 1.5;
+                    margin: 0;
+    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,263 @@
+.post_book {
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+
+    .btn-yellow {
+        width: 250px;
+        height: 60px;
+        background: $yellow;
+        border: 2px solid $black;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $black;
+        position: relative;
+        z-index: 999;
+    }
+    &--form {
+        margin: 3rem 0;
+        padding: 3rem;
+        background-color: $white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+        position: relative;
+        border-radius: 15px;
+        display: none;
+        &-head {
+            margin-bottom: 50px;
+            h3 {
+                color: $black;
+                text-transform: uppercase;
+                font-weight: $font-700;
+            }
+        }
+        
+        .upload_file {
+            position: relative;
+            height: 50px;
+            margin-bottom: 1rem;
+            .btn {
+                border-radius: 0px;
+                background-color: transparent;
+                height: 50px;
+                border-color: #999;
+                padding-left: 10px;
+                width: 100%;
+                text-align: left;
+                position: absolute;
+                left: 0;
+                top: 0;
+                cursor: pointer;
+                color: #ddd;
+                font-size: 14px;
+                border: none;
+                border-bottom: 1px solid #ccc;
+            }
+            .form-control {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                cursor: pointer;
+            }
+        }
+        
+    }
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+#msform fieldset .form-card {
+    padding: 20px 0;
+    position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9e9e9e;
+}
+
+#msform input,
+#msform textarea {
+    padding: 0px 8px 4px 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+    border-bottom: 2px solid $yellow;
+    outline-width: 0;
+}
+
+#msform .action-button {
+    margin-top: 1rem;
+    width: 200px;
+    height: 60px;
+    background: $green;
+    border: 2px solid $black;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $white;
+}
+
+#msform .action-button-previous {
+    background: #616161;
+    margin-top: 1rem;
+    width: 200px;
+    height: 60px;
+    border: 2px solid $black;
+    border-radius: 50px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $white;
+}
+#msform .action-button:focus {
+    border: 2px solid $black;
+}
+#msform .action-button-previous:focus {
+    border: 2px solid $black;
+}
+
+
+
+
+
+.fs-title {
+    font-size: 25px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #000000;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+#progressbar #account:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+}
+
+#progressbar #personal:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+}
+
+#progressbar #payment:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+}
+
+#progressbar #confirm:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+#progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: $yellow;
+}
+.success_img{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media (max-width:991px){
+    .post_book {
+        
+        &--form {
+            padding: 1rem;
+            .upload_file {
+                position: relative;
+                height: 40px;
+                margin-bottom: 25px;
+                .btn {
+                    height: 40px;
+                    font-size: 10px;
+                    color: #2c3e50;
+                }
+               
+            }
+        }
+    }
+    #msform .action-button-previous {
+        width: 100px;
+        height: 40px;
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    #msform .action-button {
+        width: 100px;
+        height: 40px;
+        font-size: 0.7rem;
+        padding: 0;
+    }
+    #msform input, #msform textarea {
+        font-size: 10px;
+    }
+}

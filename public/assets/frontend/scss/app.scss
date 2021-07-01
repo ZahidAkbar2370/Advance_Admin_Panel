@@ -1,0 +1,13 @@
+// Variables
+@import 'variables';
+
+// Bootstrap Scss
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+// Base
+@import 'mixins';
+@import 'base';
+
+// Layouts
+@import 'layouts/layouts-dir';
+

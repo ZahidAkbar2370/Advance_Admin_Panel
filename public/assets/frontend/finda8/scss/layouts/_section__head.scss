@@ -1,0 +1,29 @@
+.section__head{
+    margin-bottom: 6rem;
+    h3{
+        font-size: 32px;
+        font-weight: $font-700;
+        position: relative;
+        display: inline-block;
+        color: $black;
+        &::after{
+            content: '';
+            display: block;
+            width: 70%;
+            height: 5px;
+            background-color: $gray-900;
+            position: absolute;
+            left: 50%;
+            bottom: -20px;
+            margin-left: -35%;
+        }
+    }
+}
+@media (max-width:991px){
+    .section__head{
+        margin-bottom: 4rem;
+        h3{
+            font-size: 24px;
+        }
+    }
+}

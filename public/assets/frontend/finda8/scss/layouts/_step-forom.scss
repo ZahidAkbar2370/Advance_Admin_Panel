@@ -1,0 +1,33 @@
+#regForm {
+    z-index: 9999;
+    position: relative;
+  }
+  .tab {
+    display: none;
+  }
+
+.form-step{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+  .step {
+    height: 10px;
+    width: 33.33%;
+    background-color: #bbbbbb;
+    border: none;  
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #1ceb23;
+    opacity: 1;
+  }

@@ -1,0 +1,348 @@
+.box_section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    .shape {
+        position: absolute;
+        display: block;
+        img {
+            width: 100%;
+        }
+        &--1 {
+            bottom: -65px;
+            left: -10%;
+            width: 300px;
+        }
+        &--2 {
+            top: -59px;
+            left: 50%;
+            width: 100px;
+            margin-left: -50px;
+        }
+        &--3 {
+            right: 25px;
+            bottom: 13%;
+            width: 100px;
+            z-index: 9;
+        }
+        &--4 {
+            left: 50%;
+            bottom: -48%;
+            width: 400px;
+            margin-left: -200px;
+        }
+        &--5 {
+            left: 2rem;
+            top: -68px;
+            width: 350px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--6 {
+            right: 8rem;
+            top: -40px;
+            width: 350px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--7 {
+            left: 12rem;
+            bottom: -150px;
+            width: 450px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--8 {
+            right: 2rem;
+            bottom: -150px;
+            width: 550px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--9 {
+            right: 40%;
+            bottom: -150px;
+            width: 70px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--10 {
+            left: 28%;
+            top: 40%;
+            width: 31px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--11 {
+            left: 53%;
+            top: 26%;
+            width: 40px;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        &--12 {
+            display: none;
+        }
+    }
+
+    &--card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 30px;
+        background-color: $white;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1.5rem;
+        &:hover{
+            @include bg-grad-blue;
+           
+            p{
+                color: $white;
+            
+            }
+            h3 {
+                color: $white;
+            }
+        }
+        &__icon {
+            margin-bottom: 20px;
+        }
+        &__title {
+            margin-bottom: 10px;
+            h3 {
+                font-size: 32px;
+                font-weight: $font-700;
+                font-family: $font-family;
+                color: $black;
+            }
+        }
+        &__icon {
+            img {
+                width: 100px;
+            }
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+
+    // Tutor [age
+    &--tutor {
+        padding-bottom: 40px;
+        .box_section {
+            &--card {
+                height: 400px;
+                margin: 0 0.5rem;
+            }
+        }
+        .section__head {
+            margin-bottom: 4rem;
+        }
+
+        .row {
+            .col-md-3 {
+                &:nth-child(2) {
+                    margin-top: 6rem;
+                }
+                &:nth-child(4) {
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+    &__margin {
+        margin-top: 100px;
+        padding-bottom: 50px;
+        .shape {
+            position: absolute;
+            display: block;
+            img {
+                width: 100%;
+            }
+            &--1 {
+                bottom: -100px;
+                left: -10%;
+                width: 330px;
+                z-index: 9;
+            }
+            &--2 {
+                top: -59px;
+                left: 50%;
+                width: 100px;
+                margin-left: -50px;
+                z-index: 9;
+            }
+            &--3 {
+                right: 25px;
+                bottom: 13%;
+                width: 100px;
+                z-index: 9;
+            }
+            &--4 {
+                left: 50%;
+                bottom: -68%;
+                width: 400px;
+                margin-left: -200px;
+                z-index: 9;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width:1440px){
+    .box_section {
+      
+        &--card {
+            margin: 0 0.5rem;
+            &__title {
+                h3 {
+                    font-size: 24px;
+                }
+            }
+           
+        }
+        &--tutor {
+            padding-bottom: 40px;
+            .box_section {
+                &--card {
+                    height: 350px;
+                    margin: 1rem 0;
+                }
+            }
+            
+        }
+    
+    }
+}
+
+@media (max-width: 991px) {
+    .box_section {
+        .shape {
+            &--1 {
+                bottom: auto;
+                left: -45%;
+                width: 300px;
+                top: 12%;
+            }
+            &--2 {
+                top: 47%;
+                left: auto;
+                width: 60px;
+                margin-left: 0;
+                right: 0px;
+            }
+            &--3 {
+                right: 0;
+                bottom: 8%;
+                width: 60px;
+                z-index: 9;
+            }
+            &--4 {
+                left: 50%;
+                bottom: -14%;
+                width: 350px;
+                margin-left: -175px;
+                z-index: 9;
+            }
+            &--5 {
+                display: none;
+            }
+            &--6 {
+                display: none;
+            }
+            &--7 {
+                left: 1rem;
+                bottom: -150px;
+                width: 200px;
+                z-index: 9;
+                opacity: 0.5;
+            }
+            &--8 {
+                display: none;
+            }
+            &--9 {
+                display: none;
+            }
+            &--10 {
+                left: 2%;
+                top: 51%;
+                width: 24px;
+                z-index: 9;
+                opacity: 0.5;
+            }
+            &--11 {
+                left: 45%;
+                top: 54%;
+                width: 40px;
+                z-index: 9;
+                opacity: 0.5;
+            }
+            &--12 {
+                display: block;
+                left: 0;
+                top: 40px;
+                width: 95%;
+                z-index: 9;
+                opacity: 0.5;
+            }
+        }
+
+        &--card {
+            padding: 30px 10px;
+            height: auto !important;
+            margin: 1rem 0;
+
+            &__title {
+                h3 {
+                    font-size: 24px;
+                }
+            }
+            &__icon {
+                img {
+                    width: 60px;
+                }
+            }
+        }
+        &--tutor {
+            padding-bottom: 40px;
+            .box_section {
+                &--card {
+                   height: auto !important;
+                    margin: 1rem 0;
+                }
+            }
+            .section__head {
+                margin-bottom: 4rem;
+            }
+
+            .row {
+                .col-md-3 {
+                    &:nth-child(2) {
+                        margin-top: 0rem;
+                    }
+                    &:nth-child(4) {
+                        margin-top: 0rem;
+                    }
+                }
+            }
+        }
+        &__margin {
+            margin-top: 0px;
+            padding-bottom: 50px;
+            .shape {
+               
+                
+                &--4 {
+                    display: none;
+                }
+            }
+        }
+    }
+}

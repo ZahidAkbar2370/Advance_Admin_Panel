@@ -1,0 +1,167 @@
+.footer{
+    padding:100px 0 50px 0;
+    background-color: $gray-700;
+
+    &--card{
+        h3{
+            font-size: 24px;
+            font-weight: $font-700;
+            font-family: $font-family;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            position: relative;
+            display: inline-block;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 80px;
+                height: 3px;
+                background-color: $black;
+                display: block;
+            }
+        }
+        ul{
+            li{
+                display: block;
+                a{
+                    display: block;
+                    color: $gray-400;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .contact_info{
+            ul{
+                li{
+                    a{
+                        i{
+                            margin-right: 6px;
+                        }
+                        &:hover{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+        .social_icons{
+            margin-top: 25px;
+            li{
+                display: inline-block;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                    font-size: 16px;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 20px;
+                    border: 1px solid $gray-400;
+                    margin-right: 4px;
+                    &:hover{
+                        color: $white;
+                        &.facebook{
+                            background-color: #3b5998;
+                            border-color: #3b5998;
+                        }
+                        &.twitter{
+                            background-color: #00aced;
+                            border-color: #00aced;
+                        }
+                        &.instagram{
+                            background-color: #CB006A;
+                            border-color: #CB006A;
+                        }
+                        &.linkedin{
+                            background-color: #0077b5;
+                            border-color: #0077b5;
+                        }
+                        &.youtube{
+                            background-color: #D62B27;
+                            border-color: #D62B27;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    &--payment{
+        margin-top: 2rem;
+       
+        .payments{
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+            &--card{
+                margin-right: 20px;
+                text-align: center;
+                img{
+                    width: 30px;
+                    display: inline-block;
+                }
+                h4{
+                    font-size: 8px;
+                    font-family: "Segoe UI";
+                    font-weight: bold;
+                    color: $black-500;
+                    margin-top: 5px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        h3{
+            font-size: 14px;
+            font-weight: $font-700;
+            margin-bottom: 15px;
+        }
+        .courier{
+            img{
+                width: 50px;
+            }
+        }
+    }
+    &--copyright{
+        background-color: $blue-dark;
+        padding: 20px 15px;
+        text-align: center;
+        p{
+            color: $white;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width:991px){
+    .footer{
+        padding:100px 10px;
+    
+        &--card{
+            h3{
+                font-size: 20px;
+                
+            }
+            ul{
+               
+                margin-bottom: 40px;
+            }
+            
+            
+            .courier{
+                padding-right:0px;
+                margin-bottom: 30px;
+                
+            }
+        }
+        &--payment{
+            margin-top: 0rem;
+           
+        }
+        
+        
+    }
+}
